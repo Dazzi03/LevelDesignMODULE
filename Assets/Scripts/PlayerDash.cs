@@ -35,6 +35,10 @@ public class PlayerDash : MonoBehaviour
         {
             StartDash();
         }
+        if (Input.GetKeyDown(KeyCode.LeftShift) && !dashed && dashtimePlatform >= 0f)
+        {
+            StartDash();
+        }
     }
     void StartDash()
     {
